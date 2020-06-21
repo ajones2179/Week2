@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Array</title>
+    </head>
+    <body>
+        <script>
+            function constructorObject() {
+                this.info = "New stuff";
+                this.arr1 = ['first','second','third'];
+                this.arr2 = ['0','1','2'];
+                console.log(this.info, this.arr1);
+            }
+            var instantiateObject = new constructorObject();          
+            document.write(JSON.stringify(instantiateObject));
+        </script>
+    </body>
+</html>

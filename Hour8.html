@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yesterday</title>
+    </head>
+    <body>
+        <script>
+            Date.prototype.getYesterday = function() {
+                if (this.getDay() == 0){return "Saturday"};
+                if (this.getDay() == 1){return "Sunday"};
+                if (this.getDay() == 2){return "Monday"};
+                if (this.getDay() == 3){return "Tuesday"};
+                if (this.getDay() == 4){return "Wednesday"};
+                if (this.getDay() == 5){return "Thursday"};
+                if (this.getDay() == 6){return "Friday"};
+            }
+            function myFunction() {
+                var today = new Date();
+                document.write("Yesterday was " + today.getYesterday());
+            }
+            myFunction();
+        </script>
+    </body>
+</html>
